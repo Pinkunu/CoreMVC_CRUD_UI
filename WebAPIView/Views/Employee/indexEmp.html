@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WEB API</title>
+    <link href="../../wwwroot/css/Style.css" rel="stylesheet" />
+    <link href="../../wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../../wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../wwwroot/js/app.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+
+
+
+        <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center">Create Account</h4>
+                <form>
+                    <div class="form-group input-group" style="display:none" >
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="EmployeeId" class="form-control"  placeholder="Employee Id" id="EmployeeId" type="text">
+
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="FullName" class="form-control" placeholder="Full name" id="Fullname" type="text">
+
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="EmpCode" class="form-control" placeholder="Employee Code" id="EmployeeCode" type="text">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="Position" class="form-control" placeholder="Position" id="Position" type="text">
+                    </div> <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input name="OfficeLocation" class="form-control" placeholder="OfficeLocation" id="OfficeLocation" type="text">
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" id="btnSubmit" class="btn btn-primary btn-block"> Create Account  </button>
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" style="display:none" id="btnUpdate" class="btn btn-primary btn-block"> Update  </button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" style="display:none" id="btnClear" class="btn btn-primary btn-block"> Clear  </button>
+                    </div>
+
+                </form>
+            </article>
+        </div> <!-- card.// -->
+
+        
+
+        <div class="container">
+            <p class="text-center"><u>*Employee Details*</u></p>
+            <table id="table" class="table table-bordered" >
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Employee Code</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Office Location</th>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Edit</th>
+
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
